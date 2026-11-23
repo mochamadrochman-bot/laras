@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laras — Layanan Agenda, Rapat, Adzan &amp; Surat untuk Windows</title>
+<meta name="description" content="Laras adalah asisten pribadi bergaya Dynamic Island untuk Windows: pengingat adzan, email, WhatsApp, dan undangan rapat yang langsung masuk Google Calendar.">
+<link rel="icon" href="icon.png">
+<style>
+  :root{--bg:#0b0d12;--card:#141821;--line:#232838;--text:#e7e9ee;--muted:#9aa3b2;--green:#6ee7b7;--violet:#c4b5fd;--amber:#fbbf24}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Segoe UI Variable Text","Segoe UI",system-ui,sans-serif}
+  a{color:#93c5fd}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+  header{padding:56px 0 32px;display:flex;gap:20px;align-items:center}
+  header img{width:72px;height:72px;border-radius:18px}
+  h1{font-size:40px;line-height:1.1;margin:0;letter-spacing:-.02em}
+  .tag{color:var(--muted);margin:6px 0 0;font-size:17px}
+  .notch{margin:8px 0 40px;display:flex;justify-content:center}
+  .pill{background:#000;border-radius:0 0 22px 22px;padding:12px 22px;display:flex;gap:14px;align-items:center;box-shadow:0 12px 40px rgba(0,0,0,.5);font-weight:600}
+  .pill .dot{width:10px;height:10px;border-radius:5px;background:var(--green)}
+  .pill .t{font-variant-numeric:tabular-nums;color:var(--green)}
+  h2{font-size:24px;margin:40px 0 14px;letter-spacing:-.01em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+  .card b{display:block;font-size:16px;margin-bottom:4px}
+  .card span{color:var(--muted);font-size:14.5px}
+  .google{border-color:#2b3b63;background:#121a2b}
+  ul{padding-left:20px} li{margin:4px 0}
+  footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 48px;color:var(--muted);font-size:14px;display:flex;gap:18px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="Ikon Laras">
+    <div>
+      <h1>Laras</h1>
+      <p class="tag">Layanan Agenda, Rapat, Adzan &amp; Surat — sekretaris pribadi di atas layar Windows Anda.</p>
+    </div>
+  </header>
+
+  <div class="notch" aria-hidden="true"><div class="pill"><span class="dot"></span><span>Ashar</span><span class="t">1:12:04</span></div></div>
+
+  <p>Laras adalah aplikasi desktop Windows bergaya <i>Dynamic Island</i>. Ia tinggal di tepi atas layar dan mengingatkan Anda pada hal-hal penting tanpa mengganggu pekerjaan.</p>
+
+  <h2>Fitur</h2>
+  <div class="grid">
+    <div class="card"><b>Adzan &amp; jadwal salat</b><span>Perhitungan metode Kemenag untuk kota Anda, suara adzan penuh dengan tunda/tutup.</span></div>
+    <div class="card"><b>Email</b><span>Jumlah email belum dibaca dari Gmail dan email kantor (IMAP), langsung buka kotak masuk.</span></div>
+    <div class="card"><b>WhatsApp</b><span>Membaca notifikasi WhatsApp di Windows untuk menemukan undangan rapat dan tautan Zoom.</span></div>
+    <div class="card"><b>Undangan rapat</b><span>Membaca undangan dari WhatsApp dan sistem persuratan, menampilkan hitung mundur rapat terdekat.</span></div>
+    <div class="card google"><b>Google Calendar</b><span>Undangan yang terdeteksi langsung dibuat sebagai acara di kalender Anda — bisa dibatalkan.</span></div>
+    <div class="card"><b>Musik &amp; lirik</b><span>Kontrol pemutar musik dan lirik yang tersinkron, melayang di desktop.</span></div>
+  </div>
+
+  <h2>Bagaimana Laras memakai data Google Anda</h2>
+  <p>Jika Anda menghubungkan Google Calendar, Laras meminta izin berikut:</p>
+  <ul>
+    <li><b>Kelola acara kalender</b> (<code>calendar.events</code>) — hanya untuk <b>membuat, memperbarui, dan menghapus acara rapat yang dibuat oleh Laras sendiri</b> dari undangan yang terdeteksi. Laras tidak membaca, mengubah, atau menghapus acara lain di kalender Anda.</li>
+    <li><b>Melihat daftar kalender</b> (<code>calendar.calendarlist.readonly</code>) — agar Anda bisa memilih kalender tujuan.</li>
+    <li><b>Alamat email</b> (<code>email</code>) — hanya untuk menampilkan akun mana yang terhubung.</li>
+  </ul>
+  <p>Semua komunikasi berlangsung langsung antara komputer Anda dan Google. Token akses disimpan terenkripsi (Windows DPAPI) di komputer Anda dan <b>tidak pernah dikirim ke server pengembang</b>. Laras tidak memiliki server sendiri. Detail lengkap ada di <a href="privacy.html">Kebijakan Privasi</a>.</p>
+
+  <h2>Kebutuhan</h2>
+  <ul>
+    <li>Windows 10/11, ARM64 atau x64</li>
+    <li>Microsoft Edge WebView2 Runtime (sudah ada di Windows 11)</li>
+  </ul>
+
+  <h2>Kontak</h2>
+  <p>Pertanyaan atau masukan: <a href="mailto:mochamad.rochman@gmail.com">mochamad.rochman@gmail.com</a></p>
+
+  <footer>
+    <span>© 2026 Mochamad Rochman</span>
+    <a href="privacy.html">Kebijakan Privasi</a>
+    <a href="terms.html">Ketentuan Penggunaan</a>
+  </footer>
+</div>
+</body>
+</html>
