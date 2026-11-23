@@ -1,0 +1,15 @@
+LARAS – Layanan Agenda, Rapat, Adzan & Surat  (v1.7)
+
+PASANG / PERBARUI
+1. Bila Laras lama masih berjalan: Pengaturan Laras -> "Keluar dari Laras".
+2. Jalankan Laras.exe dari folder ini (Surface = ARM64; Laras-x64.exe untuk Intel/AMD).
+3. Laras memasang dirinya ke  %LOCALAPPDATA%\Programs\Laras , membuat ikon di Start Menu,
+   muncul di Settings > Apps > Installed apps, dan otomatis jalan saat Windows menyala.
+   File zip/folder ini boleh dihapus setelahnya.
+4. Pembaruan berikutnya: cukup jalankan Laras.exe versi baru — versi lama ditutup & diganti otomatis.
+
+MENGHAPUS: Settings > Apps > Installed apps > Laras > Uninstall
+(atau Pengaturan Laras > Diagnostik > Hapus Laras dari laptop).
+
+Windows mungkin menampilkan "Windows protected your PC" -> More info -> Run anyway.
+Data & log: %LOCALAPPDATA%\Laras
